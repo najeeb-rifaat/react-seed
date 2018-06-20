@@ -1,6 +1,4 @@
 ## React seed project
-====
-
 **Features:**
 - CI/CD pipe ready
 - Pure react app (no CRA magic)
