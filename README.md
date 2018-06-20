@@ -1,5 +1,5 @@
 ## React seed project
----------------------
+====
 
 **Features:**
 - CI/CD pipe ready
