@@ -10,7 +10,9 @@ const StyleLint =
 module.exports = {
   mode: 'development',
   devtool: 'source-map', // little expensive but good
-  entry: { main: './src/index.js' },
+  entry: {
+    main: './src/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'

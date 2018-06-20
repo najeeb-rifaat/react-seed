@@ -1,7 +1,7 @@
 ## React seed project
 ---------------------
 
-**Features: **
+**Features:**
 - CI/CD pipe ready
 - Pure react app (no CRA magic)
 - Lints for code / style / config
