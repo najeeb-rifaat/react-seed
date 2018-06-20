@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, {
+  Component
+} from 'react'
+
+import style from './input.css'
 
 export default class Input extends Component {
   constructor(props) {
@@ -11,6 +15,7 @@ export default class Input extends Component {
 
     return (
       <input
+        className={style.input}
         ref={node => { input = node }}
         type={this.props.type || 'text'}
         onKeyPress={

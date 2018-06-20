@@ -1,5 +1,9 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, {
+  Component
+} from 'react'
+
+import style from './todoList.css'
 
 export default class TodoList extends Component {
   constructor(props) {
@@ -8,7 +12,7 @@ export default class TodoList extends Component {
 
   render() {
     return (
-      <div>
+      <div className={style.todoList}>
         <ol>
           {
             this.props.todoList.map(thisTodo =>

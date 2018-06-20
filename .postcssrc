@@ -1,6 +1,5 @@
 {
   "plugins": {
-    "stylelint": {},
     "autoprefixer": {},
     "postcss-import": {},
     "postcss-preset-env": {

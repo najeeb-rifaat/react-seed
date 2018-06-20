@@ -1,0 +1,8 @@
+@import '../../styles/colors.scss';
+
+.todoList {
+  color: $defaultFontColor;
+  font-size: 25px;
+  background-color: $defaultBgColor;
+}
+

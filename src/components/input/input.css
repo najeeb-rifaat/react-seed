@@ -1,0 +1,7 @@
+@import '../../styles/colors.scss';
+
+.input {
+  width: 100%;
+  color: $defaultFontColor;
+}
+

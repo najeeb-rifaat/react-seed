@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/main.js",
   "scripts": {
-    "start": "echo 'There is no executable for this package'",
+    "start": "echo 'There is no executable for this package' && exit 1",
     "test": "jest --config ./jest.config.js",
     "build": "webpack --config ./webpack.config.js",
     "dev": "webpack-dev-server --config ./webpack.config.js",
@@ -24,25 +24,25 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.9.1",
     "html-webpack-plugin": "^3.2.0",
-    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "react-test-renderer": "^16.4.1",
     "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.5",
     "postcss-preset-env": "^5.1.0",
-    "react-test-renderer": "^16.4.1",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0",
     "stylelint": "^9.3.0",
+    "stylelint-webpack-plugin": "^0.10.5",
     "stylelint-config-standard": "^18.2.0",
     "webpack": "^4.10.1",
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "download-in-browser": "^0.1.5",
-    "prop-types": "^15.6.1",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "prop-types": "^15.6.1"
   }
 }

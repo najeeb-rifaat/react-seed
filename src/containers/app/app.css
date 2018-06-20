@@ -1,0 +1,13 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.app {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: $defaultFontColor;
+  border-radius: 5px;
+  border: dotted 1px #797979;
+  font-family: $RobotoFont;
+}
+

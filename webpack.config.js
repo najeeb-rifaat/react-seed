@@ -4,6 +4,9 @@ const path =
 const HtmlWebpackPlugin =
   require('html-webpack-plugin')
 
+const StyleLint =
+  require('stylelint-webpack-plugin')
+
 module.exports = {
   mode: 'development',
   devtool: 'source-map', // little expensive but good
@@ -13,11 +16,14 @@ module.exports = {
     filename: 'main.js'
   },
   plugins: [
+    // HTML plugin for generation the index.html file
     new HtmlWebpackPlugin({
       title: 'React Seed',
       filename: 'index.html',
       template: './templates/index.hbs'
-    })
+    }),
+    // Stylelint to lint styles on build
+    new StyleLint({})
   ],
   module: {
     rules: [
@@ -43,7 +49,7 @@ module.exports = {
               localIdentName: '[name]_[local]__[hash:base64:5]'
             }
           },
-          { // PostCSS lint and auto prefix css
+          { // PostCSS clean up and auto prefix css
             loader: 'postcss-loader'
           },
           { // Compile sassy css

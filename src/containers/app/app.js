@@ -5,12 +5,12 @@ import React, {
 import {
   Math,
   Constants
-} from '../utils'
+} from '../../utils'
 
 import {
   Input,
   TodoList
-} from '../components'
+} from '../../components'
 
 import style from './app.css'
 
@@ -30,6 +30,7 @@ export default class App extends Component {
   render () {
     return (
       <div className={style.app} >
+        <h2>Todo List:</h2>
         <Input
           onKeyPress={this.onEnterKey}
           placeHolder='Write ToDo here'
@@ -59,6 +60,7 @@ export default class App extends Component {
 
   onEnterKey (event, input) {
     if (event.key === Constants.keys.enter) {
+      // delete entry
       this.setState(
         Object.assign(
           ...this.state,
