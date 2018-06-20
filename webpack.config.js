@@ -11,9 +11,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Najeeb App',
+      title: 'React Seed',
       filename: 'index.html',
-      template: './templates/index.html'
+      template: './templates/index.hbs'
     })
   ],
   module: {

@@ -1,10 +1,10 @@
 {
-  "plugins": { 
+  "plugins": {
     "postcss-import": {},
     "autoprefixer": {},
     "stylelint": {},
     "postcss-preset-env": {
-      "browsers": "last 3 versions"  
+      "browsers": "last 3 versions"
     }
   }
 }
