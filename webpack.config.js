@@ -1,9 +1,12 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path =
+  require('path')
+
+const HtmlWebpackPlugin =
+  require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'source-map', // little expensive but good
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -40,10 +43,10 @@ module.exports = {
               localIdentName: '[name]_[local]__[hash:base64:5]'
             }
           },
-          {
+          { // PostCSS lint and auto prefix css
             loader: 'postcss-loader'
           },
-          {
+          { // Compile sassy css
             loader: 'sass-loader'
           }
         ]
@@ -52,7 +55,7 @@ module.exports = {
   },
   devServer: {
     host: '0.0.0.0',
-    public: 'devbox.local:8080',
+    public: 'devbox.local:8080', // Change this to whatever local URL you like
     headers: { // example for dev server headers
       'Access-Control-Allow-Origin': '*'
     }

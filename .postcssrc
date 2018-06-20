@@ -1,8 +1,8 @@
 {
   "plugins": {
-    "postcss-import": {},
-    "autoprefixer": {},
     "stylelint": {},
+    "autoprefixer": {},
+    "postcss-import": {},
     "postcss-preset-env": {
       "browsers": "last 3 versions"
     }
